@@ -96,7 +96,7 @@
     font-weight: 600;
     margin-bottom: 1rem;
     padding-bottom: 0.3rem;
-    border-bottom: 2px solid #1e3d59;
+    border-bottom: 2px solid #0e8feb;
 }
 
 .info-grid {
@@ -139,12 +139,12 @@
     font-weight: 600;
     margin-bottom: 1rem;
     padding-bottom: 0.3rem;
-    border-bottom: 2px solid #1e3d59;
+    border-bottom: 2px solid #0e8feb;
 }
 
 .booth-content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     /* gap: 1rem; */
     background: #e8f0fe;
     padding: 1rem;
@@ -229,4 +229,101 @@ header {visibility: hidden;}
     color: #dc3545;
     padding: 0.5rem;
     font-size: 0.9rem;
+}
+/* Language Selector Styles */
+[data-testid="stSelectbox"] {
+    position: absolute !important;
+    top: 1rem !important;
+    right: 1rem !important;
+    z-index: 1000;
+    width: 120px !important;
+}
+
+[data-testid="stSelectbox"] > div {
+    background: transparent !important;
+}
+
+[data-testid="stSelectbox"] > div > div {
+    background: white !important;
+    border: 2px solid #e0e0e0 !important;
+    border-radius: 6px !important;
+    font-size: 0.9rem !important;
+    color: #1e3d59 !important;
+}
+
+/* Updated Title Container Styles */
+.title-container {
+    text-align: center;
+    padding: 0.3rem 0;
+}
+
+.main-title {
+    margin-bottom: 0.3rem;
+    text-align: center;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.sub-title {
+    margin: 0.3rem 0;
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.election-title {
+    margin-top: 0.3rem;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+/* Adjust title spacing */
+.title-text {
+    margin: 0.2rem 0;
+    padding: 0;
+    line-height: 1.2;
+}
+
+/* Reduce overall header padding */
+.header {
+    padding: 0.8rem 1rem;
+}
+
+/* Adjust logo spacing */
+.logo-container {
+    margin-bottom: 0.3rem;
+}
+
+/* Search container adjustments */
+.search-container {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin: 1rem auto;
+    width: fit-content !important;
+    min-width: 300px;
+}
+
+.search-instruction {
+    margin-bottom: 0.5rem;
+    color: #1e3d59;
+    font-size: 0.9rem;
+}
+
+/* Language-specific font adjustments */
+.title-text[lang="hi"], .subtitle-text[lang="hi"] {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+}
+
+.title-text[lang="kn"], .subtitle-text[lang="kn"] {
+    font-family: 'Noto Sans Kannada', sans-serif;
 }
