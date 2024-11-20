@@ -68,11 +68,15 @@ def display_record(record):
             <div class="booth-title">Booth Details</div>
             <div class="booth-content">
                 <div class="booth-item">
-                    <div class="booth-label">Booth Slno</div>
+                    <div class="booth-label">Booth Serial number</div>
+                    <div class="booth-value">{record['Booth_Sl_No']}</div>
+                </div>
+                <div class="booth-item">
+                    <div class="booth-label">Booth number</div>
                     <div class="booth-value">{record['Booth_No']}</div>
                 </div>
                 <div class="booth-item">
-                    <div class="booth-label">Booth Name</div>
+                    <div class="booth-label">Booth Location</div>
                     <div class="booth-value">{record['Booth_Name']}</div>
                 </div>
             </div>
@@ -161,13 +165,9 @@ def main():
     st.markdown("""
         <div class="footer-container">
             <div class="footer-text">
-                 Initiative by Team Personnel
+                Initiative by Team Personnel | © 2024 South Western Railway, Bengaluru Division
             </div>
-            <div class="footer-divider"></div>
-            <div class="footer-copyright">
-               Handcrafted by Anil B H |  © 2024 South Western Railway, Bengaluru Division
-            </div>
-        </div>
+</div>
     """, unsafe_allow_html=True)
 
 if __name__ == "__main__":

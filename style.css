@@ -29,9 +29,10 @@
 .header {
     background: linear-gradient(135deg, #1e3d59 0%, #0a4b78 100%);
     padding: 1rem;
-    border-radius: 8px;
+   /* border-radius: 8px;*/
     margin-bottom: 0.8rem;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-bottom: #0e8feb;
 }
 
 .title {
