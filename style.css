@@ -144,10 +144,10 @@
 .booth-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    /* gap: 1rem; */
     background: #e8f0fe;
     padding: 1rem;
-    border-radius: 6px;
+    /* border-radius: 6px; */
 }
 
 .booth-item {
