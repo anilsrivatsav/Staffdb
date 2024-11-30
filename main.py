@@ -24,7 +24,7 @@ def csv_to_sqlite(file_path):
         # Create a mapping of old to new column names
         column_mapping = {
             'Sl.No.': 'Sl_No',
-            'Booth_Sl.No.': 'Booth_Sl_No',
+            'Booth Sl.No.': 'Booth_Sl_No',
             'Post/ Designation': 'Post_Designation',
             'PF_No': 'PF_No',
             'HRMS ID': 'HRMS_ID',

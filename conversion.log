@@ -132,3 +132,99 @@ KeyError: 'Post_Designation'
 2024-11-19 20:48:00,425 - INFO - Loading CSV data...
 2024-11-19 20:48:00,452 - INFO - Columns in CSV: ['Sl.No.', 'Booth_Sl.No.', 'Name', 'Post/ Designation', 'PF_No', 'HRMS ID', 'Working Under', 'Station / Place where posted', 'Booth No.', 'Booth Name', 'Remarks']
 2024-11-19 20:48:00,496 - INFO - CSV data successfully loaded into SQLite database.
+2024-11-28 20:57:52,053 - INFO - Loading CSV data...
+2024-11-28 20:57:52,087 - INFO - Columns in CSV: ['Booth Wise Sl.No.', 'Name', 'Post/ Designation', 'PF_No', 'Working Under', 'Station / Place where posted', 'Booth No.', 'Booth Name', 'Remarks', 'Unnamed: 9', 'Unnamed: 10', 'Unnamed: 11', 'Unnamed: 12', 'Unnamed: 13', 'Unnamed: 14', 'Unnamed: 15', 'Unnamed: 16', 'Unnamed: 17', 'Unnamed: 18', 'Unnamed: 19', 'Unnamed: 20', 'Unnamed: 21']
+2024-11-28 20:57:52,124 - INFO - CSV data successfully loaded into SQLite database.
+2024-11-28 21:15:40,909 - INFO - Loading CSV data...
+2024-11-28 21:15:40,928 - INFO - Columns in CSV: ['Sl.No.', 'Booth  Sl.No.', 'Name', 'Post/ Designation', 'PF_No', 'HRMS ID', 'Working Under', 'Station / Place where posted', 'Booth No.', 'Booth Name', 'Remarks', 'Unnamed: 11', 'Unnamed: 12', 'Unnamed: 13', 'Unnamed: 14', 'Unnamed: 15', 'Unnamed: 16', 'Unnamed: 17', 'Unnamed: 18', 'Unnamed: 19', 'Unnamed: 20', 'Unnamed: 21', 'Unnamed: 22', 'Unnamed: 23']
+2024-11-28 21:15:40,963 - INFO - CSV data successfully loaded into SQLite database.
+2024-11-28 21:19:40,859 - INFO - Loading CSV data...
+2024-11-28 21:19:40,894 - INFO - Columns in CSV: ['Sl.No.', 'Booth  Sl.No.', 'Name', 'Post/ Designation', 'PF_No', 'HRMS ID', 'Working Under', 'Station / Place where posted', 'Booth No.', 'Booth Name', 'Remarks', 'Unnamed: 11', 'Unnamed: 12', 'Unnamed: 13', 'Unnamed: 14', 'Unnamed: 15', 'Unnamed: 16', 'Unnamed: 17', 'Unnamed: 18', 'Unnamed: 19', 'Unnamed: 20', 'Unnamed: 21', 'Unnamed: 22', 'Unnamed: 23']
+2024-11-28 21:19:40,936 - INFO - CSV data successfully loaded into SQLite database.
+2024-11-28 21:23:12,377 - INFO - Loading CSV data...
+2024-11-28 21:23:12,384 - ERROR - Error converting CSV to SQLite
+Traceback (most recent call last):
+  File "/Users/anilbh/Music/Staffdb/main.py", line 19, in csv_to_sqlite
+    df = pd.read_csv(file_path)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anilbh/Music/Staffdb/.venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anilbh/Music/Staffdb/.venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 626, in _read
+    return parser.read(nrows)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/anilbh/Music/Staffdb/.venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1923, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anilbh/Music/Staffdb/.venv/lib/python3.12/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 234, in read
+    chunks = self._reader.read_low_memory(nrows)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "parsers.pyx", line 838, in pandas._libs.parsers.TextReader.read_low_memory
+  File "parsers.pyx", line 905, in pandas._libs.parsers.TextReader._read_rows
+  File "parsers.pyx", line 874, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "parsers.pyx", line 891, in pandas._libs.parsers.TextReader._check_tokenize_status
+  File "parsers.pyx", line 2061, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 9 fields in line 904, saw 22
+
+2024-11-28 21:24:12,061 - INFO - Loading CSV data...
+2024-11-28 21:24:12,064 - ERROR - Error converting CSV to SQLite
+Traceback (most recent call last):
+  File "/Users/anilbh/Music/Staffdb/main.py", line 19, in csv_to_sqlite
+    df = pd.read_csv(file_path)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anilbh/Music/Staffdb/.venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anilbh/Music/Staffdb/.venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 626, in _read
+    return parser.read(nrows)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/anilbh/Music/Staffdb/.venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1923, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anilbh/Music/Staffdb/.venv/lib/python3.12/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 234, in read
+    chunks = self._reader.read_low_memory(nrows)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "parsers.pyx", line 838, in pandas._libs.parsers.TextReader.read_low_memory
+  File "parsers.pyx", line 905, in pandas._libs.parsers.TextReader._read_rows
+  File "parsers.pyx", line 874, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "parsers.pyx", line 891, in pandas._libs.parsers.TextReader._check_tokenize_status
+  File "parsers.pyx", line 2061, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 9 fields in line 115, saw 22
+
+2024-11-28 21:28:36,811 - INFO - Loading CSV data...
+2024-11-28 21:28:36,821 - ERROR - Error converting CSV to SQLite
+Traceback (most recent call last):
+  File "/Users/anilbh/Music/Staffdb/main.py", line 19, in csv_to_sqlite
+    df = pd.read_csv(file_path)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anilbh/Music/Staffdb/.venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anilbh/Music/Staffdb/.venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 626, in _read
+    return parser.read(nrows)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/anilbh/Music/Staffdb/.venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1923, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anilbh/Music/Staffdb/.venv/lib/python3.12/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 234, in read
+    chunks = self._reader.read_low_memory(nrows)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "parsers.pyx", line 838, in pandas._libs.parsers.TextReader.read_low_memory
+  File "parsers.pyx", line 905, in pandas._libs.parsers.TextReader._read_rows
+  File "parsers.pyx", line 874, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "parsers.pyx", line 891, in pandas._libs.parsers.TextReader._check_tokenize_status
+  File "parsers.pyx", line 2061, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 11 fields in line 115, saw 24
+
+2024-11-28 21:29:20,649 - INFO - Loading CSV data...
+2024-11-28 21:29:20,666 - INFO - Columns in CSV: ['Sl.No.', 'Booth  Sl.No.', 'Name', 'Post/ Designation', 'PF_No', 'HRMS ID', 'Working Under', 'Station / Place where posted', 'Booth No.', 'Booth Name', 'Remarks', 'Unnamed: 11', 'Unnamed: 12', 'Unnamed: 13', 'Unnamed: 14', 'Unnamed: 15', 'Unnamed: 16', 'Unnamed: 17', 'Unnamed: 18', 'Unnamed: 19', 'Unnamed: 20', 'Unnamed: 21', 'Unnamed: 22', 'Unnamed: 23']
+2024-11-28 21:29:20,703 - INFO - CSV data successfully loaded into SQLite database.
+2024-11-29 10:57:03,204 - INFO - Loading CSV data...
+2024-11-29 10:57:03,217 - INFO - Columns in CSV: ['Sl.No.', 'Booth  Sl.No.', 'Name', 'Post/ Designation', 'PF_No', 'HRMS ID', 'Working Under', 'Station / Place where posted', 'Booth No.', 'Booth Name', 'Remarks']
+2024-11-29 10:57:03,238 - INFO - CSV data successfully loaded into SQLite database.
+2024-11-29 11:02:43,945 - INFO - Loading CSV data...
+2024-11-29 11:02:43,977 - INFO - Columns in CSV: ['Sl.No.', 'Booth  Sl.No.', 'Name', 'Post/ Designation', 'PF_No', 'HRMS ID', 'Working Under', 'Station / Place where posted', 'Booth No.', 'Booth Name', 'Remarks']
+2024-11-29 11:02:44,004 - INFO - CSV data successfully loaded into SQLite database.
+2024-11-30 19:45:46,495 - INFO - Loading CSV data...
+2024-11-30 19:45:46,509 - INFO - Columns in CSV: ['Sl.No.', 'Booth Sl.No.', 'Name', 'Post/ Designation', 'PF_No', 'HRMS ID', 'Working Under', 'Station / Place where posted', 'Booth No.', 'Booth Name', 'Remarks']
+2024-11-30 19:45:46,531 - INFO - CSV data successfully loaded into SQLite database.

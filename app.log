@@ -1,2 +1,5 @@
 2024-11-19 21:38:56,760 - ERROR - Error encoding image: [Errno 2] No such file or directory: 'logo.png'
 2024-11-19 21:39:03,640 - ERROR - Error encoding image: [Errno 2] No such file or directory: 'logo.png'
+2024-11-28 20:58:35,185 - ERROR - Database query error: Execution failed on sql 'SELECT * FROM staff WHERE PF_No='42504625728' OR HRMS_ID='42504625728'': no such column: HRMS_ID
+2024-11-28 20:59:19,870 - ERROR - Database query error: Execution failed on sql 'SELECT * FROM staff WHERE PF_No='DIRILN' OR HRMS_ID='DIRILN'': no such column: HRMS_ID
+2024-11-28 20:59:53,282 - ERROR - Database query error: Execution failed on sql 'SELECT * FROM staff WHERE PF_No='42504625203' OR HRMS_ID='42504625203'': no such column: HRMS_ID
